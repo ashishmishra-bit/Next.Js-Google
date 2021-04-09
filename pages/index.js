@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Avatar from '../components/Avatar'
-import { Microphone , ViewGridIcon } from "@heroicons/react/solid";
+import {  MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
+import Image from 'next/image';
+import { SearchIcon } from "@heroicons/react/outline";
 
 
 export default function Home() {
@@ -26,7 +28,7 @@ export default function Home() {
 
 
         {/*Icon*/}
-        <ViewGridIcon className = "h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
+        <ViewGridIcon className = "h-9 w-9 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
         {/*Avatar Block */}
 
@@ -34,6 +36,20 @@ export default function Home() {
 
         </div>
       </header>
+
+      <form>
+        <Image
+          src = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+          height = {100}
+          width = {300}
+        />
+
+        <div className = " flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl">
+          <SearchIcon className = "h-5 mr-3 text-gray-500 hover:text-black cursor-pointer " />
+          <input type="text" className= "focus:outline-none flex-grow" />
+          <MicrophoneIcon className = "h-5 mr-3 text-gray-500 hover:text-black cursor-pointer" />
+        </div>
+      </form>
     </div>
   )
 }
