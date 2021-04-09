@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Avatar from '../components/Avatar'
+import { Microphone , ViewGridIcon } from "@heroicons/react/solid";
 
 
 export default function Home() {
@@ -24,11 +26,11 @@ export default function Home() {
 
 
         {/*Icon*/}
-
+        <ViewGridIcon className = "h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
         {/*Avatar Block */}
 
-
+        <Avatar url = 'https://ashishmishra.netlify.app/static/media/profile2.e296c4e3.png' />
 
         </div>
       </header>
