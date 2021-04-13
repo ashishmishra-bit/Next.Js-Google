@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { XIcon } from "@heroicons/react/solid";
 import {  MicrophoneIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
+import Avatar from "./Avatar";
+import HeaderOptions from "./HeaderOptions";
 
 function Header() {
     const router =useRouter();
@@ -42,7 +44,9 @@ function Header() {
         />
         <button hidden type = "submit" onClick={search}>Search</button>
         </form>
+        <Avatar className="ml-auto" url = 'https://ashishmishra.netlify.app/static/media/profile2.e296c4e3.png' />
       </div>
+      <HeaderOptions />
       </header>
     )
 }
