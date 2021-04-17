@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { SearchIcon } from "@heroicons/react/outline";
 import { useRef } from 'react';
 import { router, useRouter } from 'next/router';
+require('dotenv').config();
 
 
 

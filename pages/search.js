@@ -4,6 +4,7 @@ import { API_KEY, CONTEXT_KEY } from '../Key';
 import Response from '../Response';
 import { useRouter } from "next/router";
 import SearchResults from '../components/SearchResults';
+require('dotenv').config();
 
 
 function Search({ results }) {
